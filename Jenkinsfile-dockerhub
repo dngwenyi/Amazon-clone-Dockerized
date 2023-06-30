@@ -5,8 +5,8 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
      }
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('kash-dockerhub')
-    APP_NAME = "dngwenyi/kash-project"
+    DOCKERHUB_CREDENTIALS = credentials('delco-dockerhub')
+    APP_NAME = "dngwenyi/delco-app"
     }
     stages { 
         stage('SCM Checkout') {
