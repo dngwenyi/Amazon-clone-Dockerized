@@ -5,8 +5,8 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
      }
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('delco-dockerhub')
-    APP_NAME = "dngwenyi/delco-app"
+    DOCKERHUB_CREDENTIALS = credentials('Ateba-dockerhub')
+    APP_NAME = "dngwenyi/amazone-clone"
     }
     stages { 
         stage('SCM Checkout') {
